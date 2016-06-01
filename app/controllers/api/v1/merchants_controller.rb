@@ -9,12 +9,10 @@ class Api::V1::MerchantsController < Api::ApiController
   end
 
   def find
-    binding.pry
     respond_with Merchant.find_by(merchant_params)
   end
 
   def find_all
-    binding.pry
     respond_with Merchant.where(merchant_params)
   end
 
