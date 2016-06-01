@@ -1,4 +1,4 @@
-class Api::V1::Merchants::MerchantItemsController < Api::ApiController
+class Api::V1::Merchants::ItemsController < Api::ApiController
 
   def index
     respond_with Merchant.find(params[:id]).items

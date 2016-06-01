@@ -1,4 +1,4 @@
-class Api::V1::Merchants::MerchantInvoicesController < Api::ApiController
+class Api::V1::Merchants::InvoicesController < Api::ApiController
 
   def index
     respond_with Merchant.find(params[:id]).invoices

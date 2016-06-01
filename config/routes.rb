@@ -12,8 +12,8 @@ Rails.application.routes.draw do
 
         member do
           scope module: "merchants" do
-            get "items", to: "merchant_items#index"
-            get "invoices", to: "merchant_invoices#index"
+            get "items", to: "items#index"
+            get "invoices", to: "invoices#index"
           end
         end
       end
@@ -23,6 +23,13 @@ Rails.application.routes.draw do
           get "find", to: "customers#find"
           get "find_all", to: "customers#find_all"
           get "random", to: "customers#random"
+        end
+
+        member do
+          scope module: "customers" do
+            get "invoices", to: "invoices#index"
+            get "transactions", to: "transactions#index"
+          end
         end
       end
 
@@ -50,11 +57,11 @@ Rails.application.routes.draw do
 
         member do
           scope module: "invoices" do
-            get "transactions", to: "invoice_transactions#index"
+            get "transactions", to: "transactions#index"
             get "invoice_items", to: "invoice_items#index"
             get "items", to: "items#index"
-            get "customer", to: "invoice_customer#show"
-            get "merchant", to: "invoice_merchant#show"
+            get "customer", to: "customer#show"
+            get "merchant", to: "merchant#show"
           end
         end
       end
