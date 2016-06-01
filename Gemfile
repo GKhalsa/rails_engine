@@ -24,6 +24,7 @@ gem 'responders'
 gem "active_model_serializers", github: "rails-api/active_model_serializers"
 
 
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -38,6 +39,8 @@ group :development, :test do
   gem 'byebug'
   gem 'rspec-rails'
   gem 'pry'
+  gem "factory_girl_rails", "~> 4.0"
+  gem "database_cleaner"
 end
 
 group :development do
