@@ -7,6 +7,7 @@ Rails.application.routes.draw do
         collection do
           get "find", to: "merchants#find"
           get "find_all", to: "merchants#find_all"
+          get "random", to: "merchants#random"
         end
       end
 
@@ -14,6 +15,7 @@ Rails.application.routes.draw do
         collection do
           get "find", to: "customers#find"
           get "find_all", to: "customers#find_all"
+          get "random", to: "customers#random"
         end
       end
 
@@ -21,6 +23,7 @@ Rails.application.routes.draw do
         collection do
           get "find", to: "items#find"
           get "find_all", to: "items#find_all"
+          get "random", to: "items#random"
         end
       end
 
@@ -28,6 +31,7 @@ Rails.application.routes.draw do
         collection do
           get "find", to: "invoices#find"
           get "find_all", to: "invoices#find_all"
+          get "random", to: "invoices#random"
         end
       end
 
@@ -35,6 +39,7 @@ Rails.application.routes.draw do
         collection do
           get "find", to: "invoice_items#find"
           get "find_all", to: "invoice_items#find_all"
+          get "random", to: "invoice_items#random"
         end
       end
 
@@ -42,6 +47,7 @@ Rails.application.routes.draw do
         collection do
           get "find", to: "transactions#find"
           get "find_all", to: "transactions#find_all"
+          get "random", to: "transactions#random"
         end
       end
 
