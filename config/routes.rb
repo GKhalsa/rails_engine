@@ -58,6 +58,13 @@ Rails.application.routes.draw do
           get "find_all", to: "invoice_items#find_all"
           get "random", to: "invoice_items#random"
         end
+
+        member do
+          scope module: "invoice_items" do
+            get "invoice", to: "invoice#show"
+            get "item", to: "item#show"
+          end
+        end
       end
 
       resources :transactions, only: [:index, :show] do
