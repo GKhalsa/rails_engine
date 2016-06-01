@@ -80,6 +80,12 @@ Rails.application.routes.draw do
           get "find_all", to: "transactions#find_all"
           get "random", to: "transactions#random"
         end
+
+        member do
+          scope module: "transactions" do
+            get "invoice", to: "invoice#show"
+          end
+        end
       end
 
     end
