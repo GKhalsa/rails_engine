@@ -9,6 +9,13 @@ Rails.application.routes.draw do
           get "find_all", to: "merchants#find_all"
           get "random", to: "merchants#random"
         end
+
+        member do
+          scope module: "merchants" do
+            get "items", to: "merchant_items#index"
+            get "invoices", to: "merchant_invoices#index"
+          end
+        end
       end
 
       resources :customers, only: [:index, :show] do
@@ -32,6 +39,16 @@ Rails.application.routes.draw do
           get "find", to: "invoices#find"
           get "find_all", to: "invoices#find_all"
           get "random", to: "invoices#random"
+        end
+
+        member do
+          scope module: "invoices" do
+            get "transactions", to: "invoice_transactions#index"
+            get "invoice_items", to: "invoice_items#index"
+            get "items", to: "items#index"
+            get "customer", to: "invoice_customer#show"
+            get "merchant", to: "invoice_merchant#show"
+          end
         end
       end
 
