@@ -47,3 +47,8 @@ namespace :import do
   desc "import all csv's"
   task :all => [:customers, :merchants, :items, :invoices, :invoice_items, :transactions]
 end
+
+# def from_csv(filename, model)
+#   CSV.foreach("db/csv/customers.csv", headers: true) do |row|
+#     Customer.create(row.to_h)
+# end
