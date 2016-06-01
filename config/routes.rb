@@ -9,7 +9,6 @@ Rails.application.routes.draw do
           get "find_all", to: "merchants#find_all"
           get "random", to: "merchants#random"
         end
-
         member do
           scope module: "merchants" do
             get "items", to: "items#index"
@@ -24,7 +23,6 @@ Rails.application.routes.draw do
           get "find_all", to: "customers#find_all"
           get "random", to: "customers#random"
         end
-
         member do
           scope module: "customers" do
             get "invoices", to: "invoices#index"
@@ -39,7 +37,6 @@ Rails.application.routes.draw do
           get "find_all", to: "items#find_all"
           get "random", to: "items#random"
         end
-
         member do
           scope module: "items" do
             get "invoice_items", to: "invoice_items#index"
@@ -54,7 +51,6 @@ Rails.application.routes.draw do
           get "find_all", to: "invoices#find_all"
           get "random", to: "invoices#random"
         end
-
         member do
           scope module: "invoices" do
             get "transactions", to: "transactions#index"
@@ -72,7 +68,6 @@ Rails.application.routes.draw do
           get "find_all", to: "invoice_items#find_all"
           get "random", to: "invoice_items#random"
         end
-
         member do
           scope module: "invoice_items" do
             get "invoice", to: "invoice#show"
@@ -87,7 +82,6 @@ Rails.application.routes.draw do
           get "find_all", to: "transactions#find_all"
           get "random", to: "transactions#random"
         end
-
         member do
           scope module: "transactions" do
             get "invoice", to: "invoice#show"
