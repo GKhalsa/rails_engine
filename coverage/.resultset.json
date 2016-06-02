@@ -168,6 +168,30 @@
         1,
         null
       ],
+      "/Users/Gurusundesh/turing/3module/rails_engine/app/controllers/api/v1/invoices/merchant_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Gurusundesh/turing/3module/rails_engine/app/serializers/merchant_serializer.rb": [
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "/Users/Gurusundesh/turing/3module/rails_engine/app/controllers/api/v1/invoices_controller.rb": [
         1,
         null,
@@ -238,23 +262,6 @@
         null,
         1,
         1,
-        null,
-        null,
-        null
-      ],
-      "/Users/Gurusundesh/turing/3module/rails_engine/app/serializers/merchant_serializer.rb": [
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         null,
         null,
         null
@@ -391,13 +398,6 @@
         0,
         0
       ],
-      "/Users/Gurusundesh/turing/3module/rails_engine/app/controllers/api/v1/invoices/merchant_controller.rb": [
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
       "/Users/Gurusundesh/turing/3module/rails_engine/app/controllers/api/v1/transactions/invoice_controller.rb": [
         0,
         0,
@@ -406,6 +406,6 @@
         0
       ]
     },
-    "timestamp": 1464843831
+    "timestamp": 1464844069
   }
 }
