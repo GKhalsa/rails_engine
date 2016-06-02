@@ -15,6 +15,5 @@ RSpec.describe "GET /api/v1/invoice_items/:id/invoice" do
     "merchant_id"  => invoice_two.merchant.id,
     "status"       => invoice_two.status
     )
-
   end
 end
