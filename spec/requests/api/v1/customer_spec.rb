@@ -1,16 +1,13 @@
-require "rails_helper"
+require 'rails_helper'
 
-RSpec.describe "GET /api/v1/customers" do
-  it "returns all customers" do
+RSpec.describe "GET /api/v1/customers/:id" do
+  it "returns a specific customer" do
     customer_one  = create(:customer)
     customer_two  = create(:customer, first_name: "Wesley")
 
-    get "/api/v1/customers"
-    expect(parsed_json.count).to eq(2)
+    get "/api/v1/customers/#{customer_one.id}"
 
-    customer_one_to_json = parsed_json[0]
-
-    expect(customer_one_to_json).to eq({
+    expect(parsed_json).to eq({
       "id"         => customer_one.id,
       "first_name" => customer_one.first_name,
       "last_name"  => customer_one.last_name,
