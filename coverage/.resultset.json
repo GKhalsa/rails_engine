@@ -124,6 +124,14 @@
         null,
         null
       ],
+      "/Users/Gurusundesh/turing/3module/rails_engine/app/controllers/api/v1/invoice_items/invoice_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/Gurusundesh/turing/3module/rails_engine/app/controllers/api/v1/invoice_items_controller.rb": [
         1,
         null,
@@ -382,14 +390,6 @@
         null,
         null
       ],
-      "/Users/Gurusundesh/turing/3module/rails_engine/app/controllers/api/v1/invoice_items/invoice_controller.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
       "/Users/Gurusundesh/turing/3module/rails_engine/app/controllers/api/v1/invoice_items/item_controller.rb": [
         0,
         0,
@@ -406,6 +406,6 @@
         0
       ]
     },
-    "timestamp": 1464844069
+    "timestamp": 1464882163
   }
 }
