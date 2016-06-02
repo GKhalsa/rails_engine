@@ -3,6 +3,7 @@ class Merchant < ActiveRecord::Base
   has_many :invoices
   has_many :invoice_items, through: :invoices
   has_many :transactions, through: :invoices
+  has_many :customers, through: :invoices
 
   def self.top_merchants_by_revenue(quantity)
     quantity = quantity.to_i
@@ -18,6 +19,19 @@ class Merchant < ActiveRecord::Base
   end
 
   def total_revenue
-    invoices.joins(:transactions).where(transactions: {result: "success"}).joins(:invoice_items).sum("invoice_item.quantity * invoice_item.unit_price")
+    invoices.joins(:transactions).where(transactions: {result: "success"}).joins(:invoice_items).sum("quantity * unit_price").to_f/100
   end
+
+  def favorite_customer
+    customers.select("customers.*", "COUNT(transactions) AS transaction_count")
+    .joins(:transactions)
+    .where(transactions: {result: "success"})
+    .group(:id).order("transaction_count DESC").first
+  end
+
+  def customers_with_pending_invoices
+    # binding.pry
+    customers.joins(invoices: :transactions).where(transactions: {result: "failed"})
+  end
+
 end

@@ -37,6 +37,39 @@
         1,
         1,
         1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        0,
+        null,
+        null,
+        1,
+        null,
+        0,
+        null,
+        null,
         null
       ],
       "/Users/Gurusundesh/turing/3module/rails_engine/app/models/transaction.rb": [
@@ -404,8 +437,38 @@
         null,
         null,
         null
+      ],
+      "/Users/Gurusundesh/turing/3module/rails_engine/app/controllers/api/v1/merchants/favorite_customer_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/Gurusundesh/turing/3module/rails_engine/app/controllers/api/v1/merchants/most_revenue_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/Gurusundesh/turing/3module/rails_engine/app/controllers/api/v1/merchants/pending_invoices_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/Gurusundesh/turing/3module/rails_engine/app/controllers/api/v1/merchants/revenue_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0
       ]
     },
-    "timestamp": 1464883397
+    "timestamp": 1464903010
   }
 }
