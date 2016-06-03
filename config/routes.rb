@@ -29,8 +29,9 @@ Rails.application.routes.draw do
         end
         member do
           scope module: "customers" do
-            get "invoices",     to: "invoices#index"
-            get "transactions", to: "transactions#index"
+            get "invoices",          to: "invoices#index"
+            get "transactions",      to: "transactions#index"
+            get "favorite_merchant", to: "favorite_merchant#show"
           end
         end
       end
@@ -40,6 +41,7 @@ Rails.application.routes.draw do
           get "find",     to: "items#find"
           get "find_all", to: "items#find_all"
           get "random",   to: "items#random"
+          get "most_revenue", to: "items/most_revenue#index"
         end
         member do
           scope module: "items" do
