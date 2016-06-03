@@ -27,9 +27,10 @@ class Merchant < ActiveRecord::Base
   end
 
   def customers_with_pending_invoices
-    invoices.joins(:transactions)
+    ids = invoices.joins(:transactions)
     .where(transactions: {result: "failed"})
-    .joins(:customer).uniq
+    .joins(:customer).pluck(:customer_id).uniq
+    Customer.find(ids)
   end
 
 end

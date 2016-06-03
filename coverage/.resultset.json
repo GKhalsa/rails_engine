@@ -95,9 +95,10 @@
         null,
         null,
         1,
+        1,
         null,
         null,
-        0,
+        1,
         null,
         null,
         null
@@ -178,6 +179,13 @@
       "/Users/Gurusundesh/turing/3module/rails_engine/app/serializers/transaction_serializer.rb": [
         1,
         1,
+        null
+      ],
+      "/Users/Gurusundesh/turing/3module/rails_engine/app/controllers/api/v1/merchants/pending_invoices_controller.rb": [
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/Gurusundesh/turing/3module/rails_engine/app/controllers/api/v1/invoices/customer_controller.rb": [
@@ -525,15 +533,8 @@
         0,
         0,
         0
-      ],
-      "/Users/Gurusundesh/turing/3module/rails_engine/app/controllers/api/v1/merchants/pending_invoices_controller.rb": [
-        0,
-        0,
-        0,
-        0,
-        0
       ]
     },
-    "timestamp": 1464932527
+    "timestamp": 1464933874
   }
 }
