@@ -70,9 +70,9 @@ Rails.application.routes.draw do
 
       resources :invoice_items, only: [:index, :show] do
         collection do
-          get "find",     to: "invoice_items#find"
-          get "find_all", to: "invoice_items#find_all"
-          get "random",   to: "invoice_items#random"
+          get "find",     to: "invoice_items/find#show"
+          get "find_all", to: "invoice_items/find#index"
+          get "random",   to: "invoice_items/random#show"
         end
         member do
           scope module: "invoice_items" do

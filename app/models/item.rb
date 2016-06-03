@@ -3,7 +3,7 @@ class Item < ActiveRecord::Base
   has_many :invoice_items
   has_many :invoices, through: :invoice_items
 
-  def self.find_x(params)
+  def self.finder(params)
     params[:unit_price] = (params[:unit_price].to_f * 100).round if params[:unit_price]
     find_by(params)
   end

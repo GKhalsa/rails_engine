@@ -8,8 +8,8 @@ class Api::V1::ItemsController < Api::ApiController
     respond_with Item.find(params[:id])
   end
 
-  def find  #fix
-    respond_with Item.find_x(item_params)
+  def find
+    respond_with Item.finder(item_params)
   end
 
   def find_all
