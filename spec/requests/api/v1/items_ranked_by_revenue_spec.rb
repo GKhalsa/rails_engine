@@ -11,6 +11,7 @@ RSpec.describe "GET /api/v1/items/most_revenue?quantity=x" do
     get "/api/v1/items/most_revenue?quantity=#{1}"
 
     expect(parsed_json.count).to eq(1)
+
     expect(parsed_json.first).to eq(
     "id"          =>  item.id,
     "name"        =>  item.name,
