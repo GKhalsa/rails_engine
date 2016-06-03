@@ -58,10 +58,10 @@
         null,
         null,
         1,
-        0,
+        1,
         null,
         null,
-        0,
+        1,
         null,
         null
       ],
@@ -216,7 +216,7 @@
         1,
         null,
         1,
-        8,
+        9,
         null,
         null,
         null
@@ -356,6 +356,15 @@
         null
       ],
       "/Users/Gurusundesh/turing/3module/rails_engine/app/controllers/api/v1/items/merchant_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/Gurusundesh/turing/3module/rails_engine/app/controllers/api/v1/items/most_revenue_controller.rb": [
         1,
         null,
         1,
@@ -524,17 +533,8 @@
         0,
         0,
         0
-      ],
-      "/Users/Gurusundesh/turing/3module/rails_engine/app/controllers/api/v1/items/most_revenue_controller.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
       ]
     },
-    "timestamp": 1464933874
+    "timestamp": 1464934764
   }
 }
