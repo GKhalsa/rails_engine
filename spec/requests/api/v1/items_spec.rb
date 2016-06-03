@@ -16,7 +16,7 @@ RSpec.describe "GET /api/v1/items" do
     "id"           =>   item_one.id,
     "name"         =>   item_one.name,
     "description"  =>   item_one.description,
-    "unit_price"   =>   item_one.unit_price,
+    "unit_price"   =>   "0.01",
     "merchant_id"  =>   item_one.merchant.id
     )
   end
@@ -33,7 +33,7 @@ RSpec.describe "GET /api/v1/items/:id" do
     "id"           =>   item_one.id,
     "name"         =>   item_one.name,
     "description"  =>   item_one.description,
-    "unit_price"   =>   item_one.unit_price,
+    "unit_price"   =>   "0.01",
     "merchant_id"  =>   item_one.merchant.id
     )
   end

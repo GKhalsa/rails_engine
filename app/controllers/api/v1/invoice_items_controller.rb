@@ -9,11 +9,13 @@ class Api::V1::InvoiceItemsController < Api::ApiController
   end
 
   def find
-    respond_with InvoiceItem.find_by(invoice_item_params)
+    # respond_with InvoiceItem.find_by(invoice_item_params)
+    respond_with InvoiceItem.find_x(invoice_item_params)
   end
 
-  def find_by
-    respond_with InvoiceItem.where(invoice_item_params)
+  def find_all
+    # respond_with InvoiceItem.where(invoice_item_params)
+    respond_with InvoiceItem.find_all(invoice_item_params)
   end
 
   def random

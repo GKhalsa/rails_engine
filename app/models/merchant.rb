@@ -19,7 +19,9 @@ class Merchant < ActiveRecord::Base
   end
 
   def total_revenue
-    invoices.joins(:transactions).where(transactions: {result: "success"}).joins(:invoice_items).sum("quantity * unit_price").to_f/100
+    invoices.joins(:transactions)
+    .where(transactions: {result: "success"})
+    .joins(:invoice_items).sum("quantity * unit_price").to_f/100
   end
 
   def favorite_customer
@@ -30,8 +32,7 @@ class Merchant < ActiveRecord::Base
   end
 
   def customers_with_pending_invoices
-    # binding.pry
-    customers.joins(invoices: :transactions).where(transactions: {result: "failed"})
+    invoices.joins(:transactions).where(transactions: {result: "failed"}).joins(:customer).uniq
   end
 
 end

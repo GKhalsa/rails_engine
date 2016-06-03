@@ -8,8 +8,8 @@ class Api::V1::ItemsController < Api::ApiController
     respond_with Item.find(params[:id])
   end
 
-  def find
-    respond_with Item.find_by(item_params)
+  def find  #fix
+    respond_with Item.find_x(item_params)
   end
 
   def find_all
@@ -23,6 +23,14 @@ class Api::V1::ItemsController < Api::ApiController
   private
 
     def item_params
-      params.permit(:id, :name, :description, :unit_price, :merchant_id)
+      params.permit(
+        :id,
+        :name,
+        :description,
+        :unit_price,
+        :merchant_id,
+        :created_at,
+        :updated_at
+      )
     end
 end
